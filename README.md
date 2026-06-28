@@ -1,16 +1,18 @@
-# Essential Installer
+# HFDInstaller
 
-Essential Installer is a standalone installer for the [Essential Mod](https://essential.gg).
-The installer is primarily written in Kotlin and includes a Rust wrapper, 
-which searches for an existing Java install, downloading one if none is found.
+HFDInstaller is a standalone installer for **Harambe Final Destination**, a Minecraft Java server project.
 
-The source code of the Essential Installer is accessible to everyone under a [Use and Contribution License Agreement](LICENSE).
+This project is a modified fork of the Essential Installer source code. It has been adapted for use with Harambe Final Destination and is not affiliated with, endorsed by, sponsored by, or officially connected to Essential, Essential Mod, Essential Loader, Essential Installer, ModCore Inc., Mojang, Microsoft, or Minecraft.
 
-For assistance with this repository or the installer, please use the dedicated channels available in our [Discord](https://essential.gg/discord).
+The original Essential Installer project is primarily written in Kotlin and includes a Rust wrapper, which searches for an existing Java install and can download one if none is found. HFDInstaller keeps that general installer structure while changing the branding, metadata, resources, and configuration for Harambe Final Destination.
+
+## Important Notice
+All Essential names, marks, branding, and logos belong to their respective owners. This modified version does not use the Essential name or branding as its own project identity.
+This project should be treated as a separate fork. Please do not contact Essential support channels for help with HFDInstaller.
 
 ## Building
 
-Before building the Essential Installer, you must have both Rust and a Java 8 JDK installed.
+Before building the HFD Installer, you must have both Rust and a Java 8 JDK installed.
 
 ### Building the installer
 
@@ -48,15 +50,12 @@ For configurability, see:
 
 - [wrapper/resources/info](wrapper/resources/info)
 - [installer/src/main/resources](installer/src/main/resources)
-  - Documentation in [MetadataManager](installer/src/main/kotlin/gg/essential/installer/metadata/MetadataManager.kt)
+    - Documentation in [MetadataManager](installer/src/main/kotlin/gg/essential/installer/metadata/MetadataManager.kt)
 
 ## License
 
-The [Use and Contribution License Agreement](LICENSE) allows you to modify,
-create, fork, and use new versions of our Essential Installer mod in
-accordance with the GPL-3 License. However, if you submit a pull
-request with changes or additions to the main Essential Installer
-repository, subject to the terms of the license, you transfer the
-copyright and ownership of those changes to Essential. This
-introduction is for summary purposes only and does not constitute
-part of the agreement.
+This project is distributed under the included [LICENSE](LICENSE)file.
+
+The original Essential Installer license allows modified versions and forks in accordance with GPL-3, while also containing additional terms. Keep the license file and legal notices intact when modifying or redistributing this project.
+
+If you distribute compiled builds of HFDInstaller, make sure the corresponding source code and license information are also available as required by the license.
